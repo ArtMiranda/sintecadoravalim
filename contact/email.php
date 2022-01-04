@@ -12,6 +12,9 @@ $headers = "From: ".$mailFrom;
 
 $txt = $name"."diz: ".\n\n".$message;
 
-mail($mailTo, $subject, $txt, $headers);
-header("Location: index.php?mailsend");
+if(mail($mailTo, $subject, $txt, $headers)){
+    echo("Mensagem enviada");
+}else{
+    echo("Mensagem não pode ser enviada");
+}
 }
