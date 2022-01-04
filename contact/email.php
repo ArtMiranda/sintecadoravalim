@@ -14,6 +14,8 @@ $headers = "From: ".$mailFrom;
 
 $txt = $name." diz: "."\n\n".$message;
 
+mail($mailTo, $subject, $txt, $headers)
+
 if(mail($mailTo, $subject, $txt, $headers)){
 echo("Mensagem enviada com sucesso!")
 }else{
