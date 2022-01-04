@@ -1,31 +1,17 @@
 <?php
 
 
-if(isset($_POST['email']) && !empty($_POST['email'])){
+if (isset($_POST['submit'])){
+$name = $_POST['name'];
+$subject = "Contato pelo site";
+$mailFrom = $_POST['email'];
+$message = $_POST['message'];
 
+$mailTo = "contato@sintecadoravalim.com";
+$headers = "From: ".$mailFrom;
 
-$name = addslashes($_POST['name']);
-$email = addslashes($_POST['email']);
-$message = addslashes($_POST['message']);
+$txt = "Email recebido de ".$name.".\n\n".$message;
 
-$to = "contato@sintecadoravalim.com";
-$subject = "Contato - Sintecadora Valim";
-$body = "Nome: ".$name. "\r\n".
-        "Email: ".$email. "\r\n".
-        "Mensagem: ".$message;
-
-$header = "From:contactform@sintecadoravalim.com". 
-"\r\n"."Reply-To:".$email."\r\n"."X-Mailer:PHP\".phpversion();
-
-
-if(mail($to, $subject, $body, $header)){
-    echo('Mensagem enviada');
+mail($mailTo, $subject, $txt, $headers);
+header("Location: index.php?mailsend");
 }
-else{
-    echo('A mensagem não pode ser enviada');
-}
-
-}
-
-
-?>
