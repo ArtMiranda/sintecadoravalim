@@ -9,7 +9,7 @@ $message = addslashes($_POST['message']);
 
 $to = "contato@sintecadoravalim.com";
 $subject = "Contato - Sintecadora Valim"
-$body = "Nome: ".$nome. "\r\n".
+$body = "Nome: ".$name. "\r\n".
         "Email: ".$email. "\r\n".
         "Mensagem: ".$message;
 
