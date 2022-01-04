@@ -18,12 +18,13 @@ $header = "From:contactform@sintecadoravalim.com".
 
 
 if(mail($to, $subject, $body, $header)){
-    echo("Mensagem enviada");
+    echo('Mensagem enviada');
 }
 else{
-    echo("A mensagem não pode ser enviada");
+    echo('A mensagem não pode ser enviada');
 }
 
 }
+
 
 ?>
