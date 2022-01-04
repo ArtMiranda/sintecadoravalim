@@ -18,9 +18,7 @@ $header = "From:contactform@sintecadoravalim.com".
 
 
 if(mail($to, $subject, $body, $header)){
-
     echo("Mensagem enviada com sucesso!");
-
 }
 else{
     echo("A mensagem não pode ser enviada");
