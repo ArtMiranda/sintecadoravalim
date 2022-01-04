@@ -2,7 +2,7 @@
 Website for "Sintecadora Valim"
 
 
-Simple first website made in HTML and CSS
+Simple first website made in HTML, CSS and a bit of PHP
 
 ### Features and pages
 
@@ -10,7 +10,7 @@ Simple first website made in HTML and CSS
 - [x] Main page
 - [x] About us page
 - [x] Contact us page
-- [x] Contact Form
+- [x] Contact Form on PHP
 
 Check it out in sintecadoravalim.com
 
