@@ -5,7 +5,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
 
 $name = addslashes($_POST['name']);
 $email = addslashes($_POST['email']);
-$message addslashes($_POST['message']);
+$message = addslashes($_POST['message']);
 
 $to = "contato@sintecadoravalim.com";
 $subject = "Contato - Sintecadora Valim"
@@ -22,7 +22,7 @@ if(mail($to, $subject, $body, $header)){
 
 }
 else{
-    echo("O Email não pode ser enviado");
+    echo("A mensagem não pode ser enviada");
 }
 
 }
