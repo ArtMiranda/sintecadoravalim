@@ -8,12 +8,13 @@ $email = addslashes($_POST['email']);
 $message = addslashes($_POST['message']);
 
 $to = "contato@sintecadoravalim.com";
-$subject = "Contato - Sintecadora Valim"
+$subject = "Contato - Sintecadora Valim";
 $body = "Nome: ".$name. "\r\n".
         "Email: ".$email. "\r\n".
         "Mensagem: ".$message;
 
-$header = "From: contactform@sintecadoravalim.com". "\r\n"."Reply-To:".$email."\r\n"."X-Mailer:PHP\".phpversion();
+$header = "From:contactform@sintecadoravalim.com". 
+"\r\n"."Reply-To:".$email."\r\n"."X-Mailer:PHP\".phpversion();
 
 
 if(mail($to, $subject, $body, $header)){
