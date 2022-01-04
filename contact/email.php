@@ -1,20 +1,19 @@
 <?php
 
 
-if (isset($_POST['submit'])){
+if(isset($_POST['submit'])){
+
+
 $name = $_POST['name'];
-$subject = "Contato pelo site";
+$subject = "Contato - Sintecadora Valim";
 $mailFrom = $_POST['email'];
 $message = $_POST['message'];
 
 $mailTo = "contato@sintecadoravalim.com";
 $headers = "From: ".$mailFrom;
 
-$txt = $name"."diz: ".\n\n".$message;
+$txt = "Email recebido de ".$name.".\n\n".$message;
 
-if(mail($mailTo, $subject, $txt, $headers)){
-    echo("Mensagem enviada");
-}else{
-    echo("Mensagem não pode ser enviada");
-}
+mail($mailTo, $subject, $txt, $headers);
+header("Location: index.php?mailsend")
 }
