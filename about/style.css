@@ -67,11 +67,19 @@ header{
 
 /* end navbar */
 
-
 .content{
     color: #edf0f1;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    margin: 0;
+}
+
+.text{
+    max-width: 80%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
 }
 
 .content h1{
@@ -95,6 +103,7 @@ header{
 .images{
     width: 50%;
     margin: auto;
+    text-align: center;
     border-radius: 12px;
     box-shadow: 0px 0px 3px 3px black;
 }

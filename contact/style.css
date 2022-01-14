@@ -66,21 +66,15 @@ header{
 
 /* end navbar */
 
-body{
-  justify-content: center;
-  align-items: center;
-} 
+.container{
+  align-items: center; 
+  display: block;
+}
 
-
-
-.contact-info{
-
-  /* display: flex; Causing bug */
-
-
+.contact-section{
+  display: flex;
   width: 100%; 
   justify-content: center; 
-  align-items: center; 
 }
 
 .contact-info{
