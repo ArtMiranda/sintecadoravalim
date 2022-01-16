@@ -64,15 +64,19 @@ header{
     background-color: rgba(202, 62, 27, 0.8);
 } 
 
+hr{
+  display: none;
+}
+
 /* end navbar */
 
 .container{
   align-items: center; 
-  display: block;
+  margin-top: 30px;
 }
 
 .contact-section{
-  display: flex;
+  display: grid;
   width: 100%; 
   justify-content: center; 
 }
@@ -97,13 +101,14 @@ header{
 }
 
 .contact-form{
+  display: grid;
+  position: flex;
   max-width: 700px;
   margin-right: 50px;
+  margin-bottom: 15px;
 }
 
-.contact-info, .contact-form{
-  flex: 1;
-}
+
 
 .contact-info h2{
   color: #fff;
@@ -192,8 +197,26 @@ header{
   .contact-form .text-box{
     width: 100%;
   }
-}
 
+  .contact-info img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+  }
+
+  .contact-info{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    position: relative;
+    left: 25%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+}
 
 @media screen and (max-width: 694px){
 
@@ -211,6 +234,21 @@ header{
     margin-left: 20px;
 }
 
+.contact-info{
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+
+  margin: auto;
+  text-align: center;
+  display: flex;
+  position: relative;
+  left: 0;
+
+} 
+
 }
  
 @media screen and (max-width: 520px){
@@ -226,5 +264,42 @@ header{
     display: block;
     margin: 0;
     padding: 0;
+
+
+    margin: auto;
+    text-align: center;
+    display: flex;
+    position: relative;
+    left: 0;
+  
+  }
+
+}
+
+@media screen and (max-width: 399px){
+  header{
+      display: block;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+  }
+
+  .logo{
+      width: 100px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+
+  .nav_links li{
+      margin: 0;
+  }
+
+  .contact-btn{
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  hr{
+      display: block;
   }
 }

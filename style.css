@@ -63,6 +63,10 @@
   .contact-btn:hover{
       background-color: rgba(202, 62, 27, 0.8);
   } 
+
+hr{
+    display: none;
+}
   
 
 .containter{
@@ -75,7 +79,9 @@
     margin: auto;
     display: flex;
     text-align: center;
+    margin-top: 30px;
 }
+
 .title {
     padding: 0px;
     margin: 0px;
@@ -213,4 +219,32 @@ main.cards section.card button:hover{
         margin-left: 20px;
     }
 
+}
+
+@media screen and (max-width: 399px){
+    header{
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo{
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nav_links li{
+        margin: 0;
+    }
+
+    .contact-btn{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    hr{
+        display: block;
+    }
 }
