@@ -81,6 +81,12 @@ hr{
   justify-content: center; 
 }
 
+.subtitle{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
 .contact-info{
   color: #fff;
   max-width: 500px;
